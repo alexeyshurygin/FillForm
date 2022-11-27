@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A0DF2F529234CF800A78828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DF2F429234CF800A78828 /* AppDelegate.swift */; };
+		8A0DF2F729234CF800A78828 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DF2F629234CF800A78828 /* SceneDelegate.swift */; };
+		8A0DF2FA29234CF800A78828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2F829234CF800A78828 /* LaunchScreen.storyboard */; };
+		8A0DF2FD29234CF800A78828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2FB29234CF800A78828 /* Main.storyboard */; };
+		8A0DF30629234CF800A78828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DF30529234CF800A78828 /* AppDelegate.swift */; };
+		8A0DF30929234CF800A78828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF30729234CF800A78828 /* Main.storyboard */; };
+		8A0DF31029234CF800A78828 /* FillForm Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8A0DF30F29234CF800A78828 /* FillForm Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A0DF31A29234CF800A78828 /* FillForm Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8A0DF31929234CF800A78828 /* FillForm Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A0DF32029234CF800A78828 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2DB29234CF600A78828 /* Main.html */; };
+		8A0DF32129234CF800A78828 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2DB29234CF600A78828 /* Main.html */; };
+		8A0DF32229234CF800A78828 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2DD29234CF600A78828 /* Icon.png */; };
+		8A0DF32329234CF800A78828 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2DD29234CF600A78828 /* Icon.png */; };
+		8A0DF32429234CF800A78828 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2DE29234CF600A78828 /* Style.css */; };
+		8A0DF32529234CF800A78828 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2DE29234CF600A78828 /* Style.css */; };
+		8A0DF32629234CF800A78828 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2DF29234CF600A78828 /* Script.js */; };
+		8A0DF32729234CF800A78828 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2DF29234CF600A78828 /* Script.js */; };
+		8A0DF32829234CF800A78828 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E029234CF600A78828 /* ViewController.swift */; };
+		8A0DF32929234CF800A78828 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E029234CF600A78828 /* ViewController.swift */; };
+		8A0DF32A29234CF800A78828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E129234CF800A78828 /* Assets.xcassets */; };
+		8A0DF32B29234CF800A78828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E129234CF800A78828 /* Assets.xcassets */; };
+		8A0DF32C29234CF800A78828 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E329234CF800A78828 /* SafariWebExtensionHandler.swift */; };
+		8A0DF32D29234CF800A78828 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E329234CF800A78828 /* SafariWebExtensionHandler.swift */; };
+		8A0DF32E29234CF800A78828 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E529234CF800A78828 /* _locales */; };
+		8A0DF32F29234CF800A78828 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E529234CF800A78828 /* _locales */; };
+		8A0DF33029234CF800A78828 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E629234CF800A78828 /* images */; };
+		8A0DF33129234CF800A78828 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E629234CF800A78828 /* images */; };
+		8A0DF33229234CF800A78828 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E729234CF800A78828 /* manifest.json */; };
+		8A0DF33329234CF800A78828 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E729234CF800A78828 /* manifest.json */; };
+		8A0DF33429234CF800A78828 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E829234CF800A78828 /* background.js */; };
+		8A0DF33529234CF800A78828 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E829234CF800A78828 /* background.js */; };
+		8A0DF33629234CF800A78828 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E929234CF800A78828 /* content.js */; };
+		8A0DF33729234CF800A78828 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2E929234CF800A78828 /* content.js */; };
+		8A0DF33829234CF800A78828 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2EA29234CF800A78828 /* popup.html */; };
+		8A0DF33929234CF800A78828 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2EA29234CF800A78828 /* popup.html */; };
+		8A0DF33A29234CF800A78828 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2EB29234CF800A78828 /* popup.css */; };
+		8A0DF33B29234CF800A78828 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2EB29234CF800A78828 /* popup.css */; };
+		8A0DF33C29234CF800A78828 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2EC29234CF800A78828 /* popup.js */; };
+		8A0DF33D29234CF800A78828 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 8A0DF2EC29234CF800A78828 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A0DF31129234CF800A78828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A0DF2D529234CF600A78828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A0DF30E29234CF800A78828;
+			remoteInfo = "safari Extension (iOS)";
+		};
+		8A0DF31B29234CF800A78828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A0DF2D529234CF600A78828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A0DF31829234CF800A78828;
+			remoteInfo = "safari Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A0DF34329234CF800A78828 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8A0DF31029234CF800A78828 /* FillForm Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0DF34A29234CF800A78828 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8A0DF31A29234CF800A78828 /* FillForm Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A0DF2DC29234CF600A78828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		8A0DF2DD29234CF600A78828 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8A0DF2DE29234CF600A78828 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		8A0DF2DF29234CF600A78828 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		8A0DF2E029234CF600A78828 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A0DF2E129234CF800A78828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A0DF2E329234CF800A78828 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		8A0DF2E529234CF800A78828 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		8A0DF2E629234CF800A78828 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		8A0DF2E729234CF800A78828 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		8A0DF2E829234CF800A78828 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		8A0DF2E929234CF800A78828 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		8A0DF2EA29234CF800A78828 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		8A0DF2EB29234CF800A78828 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		8A0DF2EC29234CF800A78828 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		8A0DF2F129234CF800A78828 /* FillForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FillForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0DF2F429234CF800A78828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A0DF2F629234CF800A78828 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8A0DF2F929234CF800A78828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A0DF2FC29234CF800A78828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A0DF2FE29234CF800A78828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0DF30329234CF800A78828 /* FillForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FillForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0DF30529234CF800A78828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A0DF30829234CF800A78828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A0DF30A29234CF800A78828 /* safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = safari.entitlements; sourceTree = "<group>"; };
+		8A0DF30F29234CF800A78828 /* FillForm Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FillForm Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0DF31429234CF800A78828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0DF31929234CF800A78828 /* FillForm Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FillForm Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0DF31E29234CF800A78828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0DF31F29234CF800A78828 /* safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = safari.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A0DF2EE29234CF800A78828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0DF30029234CF800A78828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0DF30C29234CF800A78828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0DF31629234CF800A78828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A0DF2D429234CF600A78828 = {
+			isa = PBXGroup;
+			children = (
+				8A0DF2D929234CF600A78828 /* Shared (App) */,
+				8A0DF2E229234CF800A78828 /* Shared (Extension) */,
+				8A0DF2F329234CF800A78828 /* iOS (App) */,
+				8A0DF30429234CF800A78828 /* macOS (App) */,
+				8A0DF31329234CF800A78828 /* iOS (Extension) */,
+				8A0DF31D29234CF800A78828 /* macOS (Extension) */,
+				8A0DF2F229234CF800A78828 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A0DF2D929234CF600A78828 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				8A0DF2E029234CF600A78828 /* ViewController.swift */,
+				8A0DF2E129234CF800A78828 /* Assets.xcassets */,
+				8A0DF2DA29234CF600A78828 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		8A0DF2DA29234CF600A78828 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A0DF2DB29234CF600A78828 /* Main.html */,
+				8A0DF2DD29234CF600A78828 /* Icon.png */,
+				8A0DF2DE29234CF600A78828 /* Style.css */,
+				8A0DF2DF29234CF600A78828 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A0DF2E229234CF800A78828 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				8A0DF2E329234CF800A78828 /* SafariWebExtensionHandler.swift */,
+				8A0DF2E429234CF800A78828 /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		8A0DF2E429234CF800A78828 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A0DF2E529234CF800A78828 /* _locales */,
+				8A0DF2E629234CF800A78828 /* images */,
+				8A0DF2E729234CF800A78828 /* manifest.json */,
+				8A0DF2E829234CF800A78828 /* background.js */,
+				8A0DF2E929234CF800A78828 /* content.js */,
+				8A0DF2EA29234CF800A78828 /* popup.html */,
+				8A0DF2EB29234CF800A78828 /* popup.css */,
+				8A0DF2EC29234CF800A78828 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A0DF2F229234CF800A78828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A0DF2F129234CF800A78828 /* FillForm.app */,
+				8A0DF30329234CF800A78828 /* FillForm.app */,
+				8A0DF30F29234CF800A78828 /* FillForm Extension.appex */,
+				8A0DF31929234CF800A78828 /* FillForm Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A0DF2F329234CF800A78828 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				8A0DF2F429234CF800A78828 /* AppDelegate.swift */,
+				8A0DF2F629234CF800A78828 /* SceneDelegate.swift */,
+				8A0DF2F829234CF800A78828 /* LaunchScreen.storyboard */,
+				8A0DF2FB29234CF800A78828 /* Main.storyboard */,
+				8A0DF2FE29234CF800A78828 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		8A0DF30429234CF800A78828 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				8A0DF30529234CF800A78828 /* AppDelegate.swift */,
+				8A0DF30729234CF800A78828 /* Main.storyboard */,
+				8A0DF30A29234CF800A78828 /* safari.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		8A0DF31329234CF800A78828 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				8A0DF31429234CF800A78828 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		8A0DF31D29234CF800A78828 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				8A0DF31E29234CF800A78828 /* Info.plist */,
+				8A0DF31F29234CF800A78828 /* safari.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A0DF2F029234CF800A78828 /* FillForm (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0DF34429234CF800A78828 /* Build configuration list for PBXNativeTarget "FillForm (iOS)" */;
+			buildPhases = (
+				8A0DF2ED29234CF800A78828 /* Sources */,
+				8A0DF2EE29234CF800A78828 /* Frameworks */,
+				8A0DF2EF29234CF800A78828 /* Resources */,
+				8A0DF34329234CF800A78828 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A0DF31229234CF800A78828 /* PBXTargetDependency */,
+			);
+			name = "FillForm (iOS)";
+			productName = "safari (iOS)";
+			productReference = 8A0DF2F129234CF800A78828 /* FillForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A0DF30229234CF800A78828 /* FillForm (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0DF34B29234CF800A78828 /* Build configuration list for PBXNativeTarget "FillForm (macOS)" */;
+			buildPhases = (
+				8A0DF2FF29234CF800A78828 /* Sources */,
+				8A0DF30029234CF800A78828 /* Frameworks */,
+				8A0DF30129234CF800A78828 /* Resources */,
+				8A0DF34A29234CF800A78828 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A0DF31C29234CF800A78828 /* PBXTargetDependency */,
+			);
+			name = "FillForm (macOS)";
+			productName = "safari (macOS)";
+			productReference = 8A0DF30329234CF800A78828 /* FillForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A0DF30E29234CF800A78828 /* FillForm Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0DF34029234CF800A78828 /* Build configuration list for PBXNativeTarget "FillForm Extension (iOS)" */;
+			buildPhases = (
+				8A0DF30B29234CF800A78828 /* Sources */,
+				8A0DF30C29234CF800A78828 /* Frameworks */,
+				8A0DF30D29234CF800A78828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FillForm Extension (iOS)";
+			productName = "safari Extension (iOS)";
+			productReference = 8A0DF30F29234CF800A78828 /* FillForm Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8A0DF31829234CF800A78828 /* FillForm Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0DF34729234CF800A78828 /* Build configuration list for PBXNativeTarget "FillForm Extension (macOS)" */;
+			buildPhases = (
+				8A0DF31529234CF800A78828 /* Sources */,
+				8A0DF31629234CF800A78828 /* Frameworks */,
+				8A0DF31729234CF800A78828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FillForm Extension (macOS)";
+			productName = "safari Extension (macOS)";
+			productReference = 8A0DF31929234CF800A78828 /* FillForm Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A0DF2D529234CF600A78828 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					8A0DF2F029234CF800A78828 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					8A0DF30229234CF800A78828 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					8A0DF30E29234CF800A78828 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					8A0DF31829234CF800A78828 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 8A0DF2D829234CF600A78828 /* Build configuration list for PBXProject "FillForm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A0DF2D429234CF600A78828;
+			productRefGroup = 8A0DF2F229234CF800A78828 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A0DF2F029234CF800A78828 /* FillForm (iOS) */,
+				8A0DF30229234CF800A78828 /* FillForm (macOS) */,
+				8A0DF30E29234CF800A78828 /* FillForm Extension (iOS) */,
+				8A0DF31829234CF800A78828 /* FillForm Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A0DF2EF29234CF800A78828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0DF32229234CF800A78828 /* Icon.png in Resources */,
+				8A0DF2FA29234CF800A78828 /* LaunchScreen.storyboard in Resources */,
+				8A0DF32029234CF800A78828 /* Main.html in Resources */,
+				8A0DF32629234CF800A78828 /* Script.js in Resources */,
+				8A0DF32A29234CF800A78828 /* Assets.xcassets in Resources */,
+				8A0DF2FD29234CF800A78828 /* Main.storyboard in Resources */,
+				8A0DF32429234CF800A78828 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0DF30129234CF800A78828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0DF32329234CF800A78828 /* Icon.png in Resources */,
+				8A0DF32529234CF800A78828 /* Style.css in Resources */,
+				8A0DF30929234CF800A78828 /* Main.storyboard in Resources */,
+				8A0DF32729234CF800A78828 /* Script.js in Resources */,
+				8A0DF32B29234CF800A78828 /* Assets.xcassets in Resources */,
+				8A0DF32129234CF800A78828 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0DF30D29234CF800A78828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0DF33429234CF800A78828 /* background.js in Resources */,
+				8A0DF33A29234CF800A78828 /* popup.css in Resources */,
+				8A0DF33829234CF800A78828 /* popup.html in Resources */,
+				8A0DF33029234CF800A78828 /* images in Resources */,
+				8A0DF33229234CF800A78828 /* manifest.json in Resources */,
+				8A0DF32E29234CF800A78828 /* _locales in Resources */,
+				8A0DF33629234CF800A78828 /* content.js in Resources */,
+				8A0DF33C29234CF800A78828 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0DF31729234CF800A78828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0DF33529234CF800A78828 /* background.js in Resources */,
+				8A0DF33B29234CF800A78828 /* popup.css in Resources */,
+				8A0DF33929234CF800A78828 /* popup.html in Resources */,
+				8A0DF33129234CF800A78828 /* images in Resources */,
+				8A0DF33329234CF800A78828 /* manifest.json in Resources */,
+				8A0DF32F29234CF800A78828 /* _locales in Resources */,
+				8A0DF33729234CF800A78828 /* content.js in Resources */,
+				8A0DF33D29234CF800A78828 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A0DF2ED29234CF800A78828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0DF32829234CF800A78828 /* ViewController.swift in Sources */,
+				8A0DF2F529234CF800A78828 /* AppDelegate.swift in Sources */,
+				8A0DF2F729234CF800A78828 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0DF2FF29234CF800A78828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0DF32929234CF800A78828 /* ViewController.swift in Sources */,
+				8A0DF30629234CF800A78828 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0DF30B29234CF800A78828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0DF32C29234CF800A78828 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0DF31529234CF800A78828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0DF32D29234CF800A78828 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A0DF31229234CF800A78828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A0DF30E29234CF800A78828 /* FillForm Extension (iOS) */;
+			targetProxy = 8A0DF31129234CF800A78828 /* PBXContainerItemProxy */;
+		};
+		8A0DF31C29234CF800A78828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A0DF31829234CF800A78828 /* FillForm Extension (macOS) */;
+			targetProxy = 8A0DF31B29234CF800A78828 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A0DF2DB29234CF600A78828 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0DF2DC29234CF600A78828 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		8A0DF2F829234CF800A78828 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0DF2F929234CF800A78828 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A0DF2FB29234CF800A78828 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0DF2FC29234CF800A78828 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A0DF30729234CF800A78828 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0DF30829234CF800A78828 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A0DF33E29234CF800A78828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A0DF33F29234CF800A78828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8A0DF34129234CF800A78828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HCJX48NQH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FillForm Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyshurygin.fillform.Extension;
+				PRODUCT_NAME = "FillForm Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A0DF34229234CF800A78828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HCJX48NQH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FillForm Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyshurygin.fillform.Extension;
+				PRODUCT_NAME = "FillForm Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A0DF34529234CF800A78828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HCJX48NQH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = FillForm;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyshurygin.fillform;
+				PRODUCT_NAME = FillForm;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A0DF34629234CF800A78828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HCJX48NQH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = FillForm;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyshurygin.fillform;
+				PRODUCT_NAME = FillForm;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A0DF34829234CF800A78828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/safari.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HCJX48NQH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FillForm Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyshurygin.fillform.Extension;
+				PRODUCT_NAME = "FillForm Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8A0DF34929234CF800A78828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/safari.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HCJX48NQH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "FillForm Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyshurygin.fillform.Extension;
+				PRODUCT_NAME = "FillForm Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8A0DF34C29234CF800A78828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/safari.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HCJX48NQH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FillForm;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyshurygin.fillform;
+				PRODUCT_NAME = FillForm;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8A0DF34D29234CF800A78828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/safari.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2HCJX48NQH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FillForm;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyshurygin.fillform;
+				PRODUCT_NAME = FillForm;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A0DF2D829234CF600A78828 /* Build configuration list for PBXProject "FillForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0DF33E29234CF800A78828 /* Debug */,
+				8A0DF33F29234CF800A78828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0DF34029234CF800A78828 /* Build configuration list for PBXNativeTarget "FillForm Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0DF34129234CF800A78828 /* Debug */,
+				8A0DF34229234CF800A78828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0DF34429234CF800A78828 /* Build configuration list for PBXNativeTarget "FillForm (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0DF34529234CF800A78828 /* Debug */,
+				8A0DF34629234CF800A78828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0DF34729234CF800A78828 /* Build configuration list for PBXNativeTarget "FillForm Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0DF34829234CF800A78828 /* Debug */,
+				8A0DF34929234CF800A78828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0DF34B29234CF800A78828 /* Build configuration list for PBXNativeTarget "FillForm (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0DF34C29234CF800A78828 /* Debug */,
+				8A0DF34D29234CF800A78828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A0DF2D529234CF600A78828 /* Project object */;
+}
