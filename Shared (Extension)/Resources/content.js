@@ -1,25 +1,24 @@
-function setValue(selector, value, text = null) {
-    let elements = document.querySelectorAll(selector);
-    let elem = null;
-    for (const e of elements)
-        if (text === null || e.innerText != null && e.innerText.trim() === text.trim()) {
-            elem = e;
-            break;
-        }
+function setValueBySelector(value, selector) {
+    let elem = document.querySelector(selector);
     if (elem != null) {
         if (elem instanceof HTMLInputElement) {
             elem.value = value;
-            return;
         }
-        while (elem.parentElement != null) {
-            elem = elem.parentElement;
-            let input = elem.querySelector("input[type='text'], input:not([type])");
-            if (input != null && input instanceof HTMLInputElement) {
+    }
+}
+
+function setValueByText(value, text) {
+    const inputSelector = "input[type='text'], input:not([type])";
+    document.querySelectorAll(inputSelector).forEach(input => {
+        let e = input.closest("label , div, h3");
+        while (e != null) {
+            if (e.innerText.includes(text) && e.querySelectorAll(inputSelector).length === 1) {
                 input.value = value;
                 return;
             }
+            e = e.parentElement;
         }
-    }
+    });
 }
 
 function fillForm() {
@@ -39,44 +38,55 @@ function fillForm() {
     const currentEmployer = "";
     const skills = "";
     const pronouns = "";
-    
-    setValue("input#last_name, input[aria-label='Last Name']", lastName);
-    setValue("input[name='name'], input[name='full_name'], input[name='fullName'], input[aria-label='Full Name']", fullName);
-    setValue("div", fullName, "Full name");
-    setValue("input#phone", phone);
-    setValue("input#email", email);
-    setValue("label", city, "Location (City)");
-    setValue("label, div", linkedin, "LinkedIn Profile");
-    setValue("input[name='linkedinUrl']", linkedin);
-    setValue("label", personalSite, "Website");
-    setValue("input[name='blogUrl']", personalSite);
-    setValue("label, div", github, "GitHub");
-    setValue("label, div", github, "Portfolio");
-    setValue("input[name='githubUrl']", github);
-    setValue("label", githubProfile, "GitHub handle");
-    setValue("label", legalCountry, "In which of the following countries are you legally authorized to work in?");
-    setValue("label", "Yes", "Will you now or in the future require visa sponsorship for employment?");
-    setValue("label", currentCity, "current location");
-    setValue("label", currentCity, "located");
-    setValue("label", "Yes", "Have you ever worked remotely before?");
-    setValue("label", "Loneliness - use Slack, get a hobby, have a walk, meet friends IRL. Control - status meetings, PRs and Jira board will" +
+    const noticePeriod = "";
+    const measureSuccess = "";
+    const pplUnderManagement = "";
+    const handsOnTime = "";
+    const salary = "";
+
+    setValueBySelector(lastName, "input#last_name, input[aria-label='Last Name']");
+    setValueBySelector(fullName, "input[name='name'], input[name='full_name'], input[name='fullName'], input[aria-label='Full Name']");
+    setValueByText(fullName, "Full name");
+    setValueBySelector(phone, "input#phone");
+    setValueBySelector(email, "input#email");
+    setValueByText(city, "Location (City)");
+    setValueByText(linkedin, "LinkedIn Profile");
+    setValueBySelector(linkedin, "input[name='linkedinUrl']");
+    setValueByText(personalSite, "Website");
+    setValueBySelector(personalSite, "input[name='blogUrl']");
+    setValueByText(github, "GitHub");
+    setValueByText(github, "Portfolio");
+    setValueBySelector(github, "input[name='githubUrl']");
+    setValueByText(githubProfile, "GitHub handle");
+    setValueByText(legalCountry, "In which of the following countries are you legally authorized to work in?");
+    setValueByText("Yes", "Will you now or in the future require visa sponsorship for employment?");
+    setValueByText(currentCity, "current location");
+    setValueByText(currentCity, "located");
+    setValueByText("Yes", "Have you ever worked remotely before?");
+    setValueByText("Loneliness - use Slack, get a hobby, have a walk, meet friends IRL. Control - status meetings, PRs and Jira board will" +
         " compensate" +
         " for" +
         " that.", "What do you think are some of the challenges of" +
         " working" +
         " remotely, and how would you address them?");
-    setValue("label", "On your website", "How did you hear about this job?");
-    setValue("label", "Yes", "Please acknowledge that you've read the GitHub Candidate Privacy Policy.");
-    setValue("label", currentEmployer, "current employer");
-    setValue("h3", currentTitle, "title");
-    setValue("label", "Male", "Gender (Select one)");
-    setValue("label", "Yes", "GitHub has my consent to collect, store, and process my data for the purpose of considering me for employment, and" +
+    setValueByText("On your website", "How did you hear about this job?");
+    setValueByText("Yes", "Please acknowledge that you've read the GitHub Candidate Privacy Policy.");
+    setValueByText(currentEmployer, "current employer");
+    setValueByText(currentTitle, "title");
+    setValueByText("Male", "Gender (Select one)");
+    setValueByText("Yes", "GitHub has my consent to collect, store, and process my data for the purpose of considering me for employment, and" +
         " for up to 365 days thereafter.");
-    setValue("div", skills, "Skills");
-    setValue("div", pronouns, "pronouns");
+    setValueByText(skills, "Skills");
+    setValueByText(pronouns, "pronouns");
+    setValueByText(noticePeriod, "notice period");
+    setValueByText(measureSuccess, "measure its success");
+    setValueByText(pplUnderManagement, "ow many people");
+    setValueByText(handsOnTime, "hands-on");
+    setValueByText(salary, "desired gross salary");
+
     // Let it be the last
-    setValue("h3", firstName, "first name");
-    setValue("input#first_name, input[aria-label='First Name']", firstName);
+    setValueByText(firstName, "first name");
+    setValueBySelector(firstName, "input#first_name, input[aria-label='First Name']");
 }
 
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
