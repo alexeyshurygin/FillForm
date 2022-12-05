@@ -18,10 +18,25 @@
         "scripts": ["background.js"]
     },
 
-    "content_scripts": [{
-        "js": [ "content.js" ],
-        "matches": [ "<all_urls>" ]
-    }],
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        },
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ],
+            "all_frames": true
+        }
+    ],
 
     "action": {
         "default_popup": "popup.html",
