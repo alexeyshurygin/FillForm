@@ -10,7 +10,7 @@ function setValueBySelector(value, selector) {
 function setValueByText(value, text) {
     const inputSelector = "input[type='text'], input:not([type])";
     document.querySelectorAll(inputSelector).forEach(input => {
-        let e = input.closest("label , div, h3");
+        let e = input.closest("label, div, h3");
         while (e != null) {
             if (e.innerText.includes(text) && e.querySelectorAll(inputSelector).length === 1) {
                 input.value = value;
@@ -25,6 +25,8 @@ function fillForm() {
     const firstName = "";
     const lastName = "";
     const fullName = "";
+    const birthday = "";
+    const prefix = "";
     const email = "";
     const phone = "";
     const city = "";
@@ -44,11 +46,13 @@ function fillForm() {
     const handsOnTime = "";
     const salary = "";
 
-    setValueBySelector(lastName, "input#last_name, input[aria-label='Last Name']");
-    setValueBySelector(fullName, "input[name='name'], input[name='full_name'], input[name='fullName'], input[aria-label='Full Name']");
+    setValueBySelector(lastName, "input#last_name, input[aria-label='Last Name'], input[autocomplete='family-name']");
     setValueByText(fullName, "Full name");
-    setValueBySelector(phone, "input#phone");
-    setValueBySelector(email, "input#email");
+    setValueBySelector(fullName, "input[name='name'], input[name='full_name'], input[name='fullName'], input[aria-label='Full Name'], input[autocomplete='name']");
+    setValueBySelector(birthday, "input[autocomplete='bday']");
+    setValueBySelector(prefix, "input[autocomplete='honorific-prefix']");
+    setValueBySelector(email, "input#email, input[autocomplete='email']");
+    setValueBySelector(phone, "input#phone, input[autocomplete='tel'], input[autocomplete='tel-national']");
     setValueByText(city, "Location (City)");
     setValueByText(linkedin, "LinkedIn Profile");
     setValueBySelector(linkedin, "input[name='linkedinUrl']");
@@ -86,7 +90,7 @@ function fillForm() {
 
     // Let it be the last
     setValueByText(firstName, "first name");
-    setValueBySelector(firstName, "input#first_name, input[aria-label='First Name']");
+    setValueBySelector(firstName, "input#first_name, input[aria-label='First Name'], input[autocomplete='given-name']");
 }
 
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
